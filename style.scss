@@ -1,12 +1,80 @@
-$backgroundColor: black;
-
 html {
 
+    $backgroundColor: whitesmoke;
+    $main-title-size: 2.8rem;
+    
+    // @media only screen and (min-device-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ 
+    //     $main-title-size: 28px;
+    // }
+    // @media (min-device-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+    //     $main-title-size: 30px;
+    // }
+    // @media (min-device-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+    //     $main-title-size: 38px;
+    // }
+    // @media (min-device-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+    //     $main-title-size: 40px;
+    // }
+    // @media (min-device-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+    //     $main-title-size: 48px;
+    // }
+    // @media (min-device-width:1281px) { /* hi-res laptops and desktops */ 
+    //     $main-title-size: 48px;
+    // }
+    
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 2rem;
+
     body {
-        background-color: $backgroundColor;
+
+        background-color: whitesmoke;
+        height: auto;
+
+        .container {
+            position: relative; 
+        }
 
         header {
-            color: whitesmoke;
+            color: black;
+
+            #main-title {
+                font-size: $main-title-size;
+            }
+        }
+
+        main {
+            
+        }
+
+        footer {
+            // align-content: ceil($number: 0);
+            // position: absolute;
+            // bottom: 0;
+            // top: 100;
+            // width: 100%;
+            // height: 2.5rem;
+
+            // height: 5rem; // Replace with the height your footer should be
+            width: 100%; // Don't change
+            background-image: none;
+            background-repeat: repeat;
+            background-attachment: scroll;
+            background-position: 0% 0%;
+            position: fixed;
+            bottom: 0pt;
+            left: 0pt;
+
+            background:#6cf;
+
+            .footer_contents {
+
+                height: 2.2rem; // Replace with the height your footer should be
+                width: 1000px; // Visible width of footer
+                margin:auto;
+            
+            }
+
         }
     }
 }
